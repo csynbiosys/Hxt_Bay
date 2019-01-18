@@ -43,9 +43,10 @@ ylim([0,1.10])
 figure(4)
 errorbar(FluoData{:,'Var1'}*60,FluoData{:,'Var2'},FluoData{:,'Var3'});
 hold on; 
-plot(InputData{:,'Var1'}*60,InputData{:,'Var2'}*15,'r');
+plot(InputData{:,'Var1'}*60,InputData{:,'Var2'}*25,'r');
 hold on; 
-plot(InputData{:,'Var1'}*60,InputApprox_mean*15,'k');
+plot(InputData{:,'Var1'}*60,InputApprox_mean*25,'k');
+ylim([0,28])
 xlabel('Time [min]')
 ylabel('Fluorescence [AU]')
 %% Extraction of csv File for the input (event based representation)
